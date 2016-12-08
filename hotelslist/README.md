@@ -8,6 +8,8 @@ We will be evaluating how the app performs: it should be stable and responsive a
 
 A zip file or GitHub link with your project. We should be able to view the source and build the app using gradle. In the zip file, feel free to include an apk that’s ready to run, and a README if needed.
 
+If you want to use outside sources for parts of your submission, please cite them with a direct URL.
+
 # API
 
 `GET http://hipmunk.com/mobile/coding_challenge`
