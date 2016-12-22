@@ -1,6 +1,6 @@
 Your app will fetch a list of hotels using our Coding Challenge API (documented below) and display each hotel’s name and image in a scrolling list. Tapping on a hotel image should expand that image to full screen. Tapping on it again, or pressing the back button, should return to the list of results. Your app must support both landscape and portrait orientations, but you may choose to support either a phone or tablet-sized device.
 
-Please emphasize optimizing the speed of results loading and the performance of scrolling down the list.
+Please emphasize optimizing the speed of results loading and the performance of scrolling down the list. We would look at how your code would perform in a real world scenario: if the hotels were more complex objects with more complex views representing them, and if there was a lot more data than just a couple dozen hotels.
 
 We will be evaluating how the app performs: it should be stable and responsive at all times. We will also be looking at your implementation code; so please make sure it is properly documented. Don't be shy to pay extra attention to detail on any specific part of the challenge that's appealing to you, but don’t lose sight of the fundamentals. 
 
