@@ -12,7 +12,7 @@ If you want to use outside sources for parts of your submission, please cite the
 
 # API
 
-`GET http://hipmunk.com/mobile/coding_challenge`
+`GET https://hipmunk.com/mobile/coding_challenge`
 
 This endpoint returns a JSON dictionary with a single key “hotels” containing an array of dictionaries with the following keys:
 
