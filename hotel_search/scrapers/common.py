@@ -12,7 +12,7 @@ class Scraper(object):
         self.results = []
 
         # wait a bit
-        # yield gen.sleep(1)
+        yield gen.sleep(2)
 
         self.load_results()
         self.results.sort(key=lambda r: r['ecstasy'])
