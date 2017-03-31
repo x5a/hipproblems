@@ -1,6 +1,6 @@
-# Building an Hotel Search API
+# Building a Hotel Search API
 
-When a user does an hotel search on Hipmunk we search many partner sites simultaneously to ensure we give them the best 
+When a user runs a hotel search on Hipmunk we search many partner sites simultaneously to ensure we give them the best 
 options. In this problem, you'll build an API that queries each of our different partners and merges their results together.
 
 # Background

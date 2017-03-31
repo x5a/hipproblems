@@ -14,13 +14,10 @@ class Scraper(object):
         # wait a bit
         yield gen.sleep(2)
 
-        self.load_results()
+        self.load_fake_results(xrange(1, 20, self.step))
         self.results.sort(key=lambda r: r['ecstasy'])
 
         raise gen.Return(self.results)
-
-    def load_results(self):
-        self.load_fake_results(xrange(1, 20, self.step))
 
     def load_fake_results(self, range_iter):
         dir_path = os.path.dirname(os.path.realpath(__file__))
