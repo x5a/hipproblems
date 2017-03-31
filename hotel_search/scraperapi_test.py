@@ -7,7 +7,7 @@ EXPECTED_COUNTS = {
     "Orbitz": 300,
     "Priceline": 600,
     "Travelocity": 400,
-    "United": 1799,
+    "Hilton": 1799,
 }
 
 

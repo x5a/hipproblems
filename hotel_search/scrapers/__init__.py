@@ -2,7 +2,7 @@ from hotel_search.scrapers.expedia import ExpediaScraper
 from hotel_search.scrapers.orbitz import OrbitzScraper
 from hotel_search.scrapers.priceline import PricelineScraper
 from hotel_search.scrapers.travelocity import TravelocityScraper
-from hotel_search.scrapers.united import UnitedScraper
+from hotel_search.scrapers.hilton import HiltonScraper
 
 
 SCRAPERS = [
@@ -10,7 +10,7 @@ SCRAPERS = [
     OrbitzScraper,
     PricelineScraper,
     TravelocityScraper,
-    UnitedScraper,
+    HiltonScraper,
 ]
 SCRAPER_MAP = {s.provider.lower(): s for s in SCRAPERS}
 

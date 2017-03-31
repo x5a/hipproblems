@@ -1,7 +1,7 @@
 from hotel_search.scrapers.common import Scraper
 
 
-class UnitedScraper(Scraper):
+class HiltonScraper(Scraper):
 
-    provider = "United"
+    provider = "Hilton"
     step = 1
