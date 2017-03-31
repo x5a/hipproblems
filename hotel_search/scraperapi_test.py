@@ -3,11 +3,11 @@ import requests
 
 
 EXPECTED_COUNTS = {
-    "Expedia": 1199,
-    "Orbitz": 300,
-    "Priceline": 600,
-    "Travelocity": 400,
-    "Hilton": 1799,
+    "Expedia": 4,
+    "Orbitz": 5,
+    "Priceline": 10,
+    "Travelocity": 7,
+    "Hilton": 19,
 }
 
 
@@ -21,12 +21,13 @@ def test_hotel_search():
 
     for provider, count in provider_counts.most_common():
         expected = EXPECTED_COUNTS[provider]
-        assert count == expected, "%s results missing for %s" % (
+        assert count == expected, "%s results missing for %s, expected %s, count %s" % (
             expected - count,
             provider,
+            expected, count
         )
 
-    sorted_results = sorted(results, key=lambda r: r["agony"])
+    sorted_results = sorted(results, key=lambda r: r["ecstasy"])
     assert results == sorted_results, "Results aren't sorted properly!"
 
     took = resp.elapsed.total_seconds()
