@@ -45,13 +45,13 @@
                                 <rect key="frame" x="16" y="190" width="343" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Nc-Zbr">
-                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDw-Rs-RxP">
-                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                        <rect key="frame" x="172" y="0.0" width="171" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -65,14 +65,14 @@
                                 <rect key="frame" x="16" y="220" width="343" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icd-xQ-tLg">
-                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="30"/>
                                         <state key="normal" title="2017-04-01"/>
                                         <connections>
                                             <segue destination="2hl-6e-Iig" kind="presentation" identifier="pick_check_in_date" id="WcD-aZ-s7t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeC-8W-8hU">
-                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                        <rect key="frame" x="172" y="0.0" width="171" height="30"/>
                                         <state key="normal" title="2017-04-04"/>
                                         <connections>
                                             <segue destination="2hl-6e-Iig" kind="presentation" identifier="pick_check_out_date" id="p72-FD-jVd"/>
@@ -135,7 +135,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Select hotel sort" id="Pwl-3H-5Qg">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="43f-hx-Bg0"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="43f-hx-Bg0">
+                            <connections>
+                                <action selector="dismissWithSender:" destination="FPC-mT-DqL" id="Ttg-CO-V0Y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bp3-vB-aZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,7 +160,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Select hotel filters" id="Kkd-oh-Evl">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="v7a-jk-OPA"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="v7a-jk-OPA">
+                            <connections>
+                                <action selector="dismissWithSender:" destination="cIZ-1D-rMf" id="tDU-qd-Lz0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rab-A5-nXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,7 +229,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xY-Ql-xxp">
-                                <rect key="frame" x="180.5" y="168" width="14" height="21"/>
+                                <rect key="frame" x="181" y="168" width="14" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -263,7 +271,7 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-wP-6Mu">
-                                <rect key="frame" x="168.5" y="288" width="37" height="30"/>
+                                <rect key="frame" x="169" y="288" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneActionWithSender:" destination="tAX-cZ-vTt" eventType="touchUpInside" id="J62-tf-Q0x"/>

@@ -16,6 +16,7 @@
 		F222BCF61E830D4C00CE0EB2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCF51E830D4C00CE0EB2 /* DatePickerViewController.swift */; };
 		F222BCF81E83175000CE0EB2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCF71E83175000CE0EB2 /* SearchViewController.swift */; };
 		F222BCFA1E83235F00CE0EB2 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BCF91E83235F00CE0EB2 /* HotelViewController.swift */; };
+		F27251351E95A60E00222BC8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27251341E95A60E00222BC8 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F222BCF51E830D4C00CE0EB2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		F222BCF71E83175000CE0EB2 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F222BCF91E83235F00CE0EB2 /* HotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
+		F27251341E95A60E00222BC8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				F222BCDC1E81E72500CE0EB2 /* Assets.xcassets */,
 				F222BCDE1E81E72500CE0EB2 /* LaunchScreen.storyboard */,
 				F222BCE11E81E72500CE0EB2 /* Info.plist */,
+				F27251341E95A60E00222BC8 /* UIViewController+Extensions.swift */,
 			);
 			path = Hotelzzz;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				F222BCD61E81E72500CE0EB2 /* AppDelegate.swift in Sources */,
 				F222BCF81E83175000CE0EB2 /* SearchViewController.swift in Sources */,
 				F222BCF61E830D4C00CE0EB2 /* DatePickerViewController.swift in Sources */,
+				F27251351E95A60E00222BC8 /* UIViewController+Extensions.swift in Sources */,
 				F222BCFA1E83235F00CE0EB2 /* HotelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +428,7 @@
 				F222BCF11E81E72500CE0EB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F222BCF21E81E72500CE0EB2 /* Build configuration list for PBXNativeTarget "HotelzzzTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +437,7 @@
 				F222BCF41E81E72500CE0EB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

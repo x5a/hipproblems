@@ -9,6 +9,7 @@
 import postMessage from './postMessage';
 import parseDate from './parseDate';
 import {fetchDummyHotelResults} from './data';
+import {SORT_FUNCTIONS_BY_KEY} from "./sortFunctions";
 
 const messageSenders = {};
 const jsAPI = {};
@@ -39,6 +40,19 @@ jsAPI.runHotelSearch = (setState, {location, dateStart, dateEnd}) => {
             setState({results});
             messageSenders.HOTEL_API_RESULTS_READY(results);
         });
+}
+
+
+jsAPI.setHotelSort = (setState, sortId) => {
+    if (sortId && !SORT_FUNCTIONS_BY_KEY[sortId]) {
+        throw new Error("Invalid sort ID: " + sortId);
+    }
+    setState({sortId});
+}
+
+
+jsAPI.setHotelFilters = (setState, filters) => {
+    setState({filters});
 }
 
 
@@ -81,7 +95,7 @@ messageSenders.HOTEL_API_RESULTS_READY = (results) => {
  * @param {String} result.address
  */
 messageSenders.HOTEL_API_HOTEL_SELECTED = (result) => {
-    postMessage('HOTEL_API_HOTEL_SELECTED', result);
+    postMessage('HOTEL_API_HOTEL_SELECTED', {result});
 }
 
 
