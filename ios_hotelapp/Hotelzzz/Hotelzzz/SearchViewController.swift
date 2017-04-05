@@ -66,7 +66,7 @@ class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigati
 
     func search(location: String, dateStart: Date, dateEnd: Date) {
         _searchToRun = Search(location: location, dateStart: dateStart, dateEnd: dateEnd)
-        self.webView.load(URLRequest(url: URL(string: "http://localhost:3000")!))
+        self.webView.load(URLRequest(url: URL(string: "http://hipmunk.github.io/hipproblems/ios_hotelapp/")!))
     }
 
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {

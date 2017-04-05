@@ -2,7 +2,7 @@
 
 For this challenge, you will make a simple hotel search app by combining iOS and web technology. It is called "Hotelzzz" because it helps you find a place to sleep!
 
-There is a "web server" running at `https://hipmunk.github.io/hipproblems/ios_hotelapp/server`.
+There is a "web server" running at `https://hipmunk.github.io/hipproblems/ios_hotelapp/`.
 This page has a JavaScript API; you can call functions from the JS console and get the page to do things.
 
 Visit the page now, open the JS console, and type:
