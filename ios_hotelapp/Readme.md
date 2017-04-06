@@ -124,3 +124,11 @@ A `HotelResult` is an object that looks like this:
 ### `HOTEL_API_HOTEL_SELECTED {result: HotelResult}`
 
 Sent when the user taps a row in the results list. See `HOTEL_API_RESULTS_READY` for what a `HotelResult` looks like.
+
+## FAQ
+
+**Can I add 3rd party libraries?** Yes, as long as you provide working build
+instructions for us.
+
+**What if I don't have time to finish?** That's okay, just get in touch with
+us with what you have.
