@@ -17,11 +17,46 @@ private let dateFormatter: DateFormatter = {
     return formatter
 }()
 
+private func jsonStringify(_ obj: [AnyHashable: Any]) -> String {
+    let data = try! JSONSerialization.data(withJSONObject: obj, options: [])
+    return String(data: data, encoding: .utf8)!
+}
 
-class SearchViewController: UIViewController {
+
+class SearchViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
+
+    struct Search {
+        let location: String
+        let dateStart: Date
+        let dateEnd: Date
+
+        var asJSONString: String {
+            return jsonStringify([
+                "location": location,
+                "dateStart": dateFormatter.string(from: dateStart),
+                "dateEnd": dateFormatter.string(from: dateEnd)
+            ])
+        }
+    }
+
+    private var _searchToRun: Search?
+
     lazy var webView: WKWebView = {
-        let webView = WKWebView()
+        let webView = WKWebView(frame: CGRect.zero, configuration: {
+            let config = WKWebViewConfiguration()
+            config.userContentController = {
+                let userContentController = WKUserContentController()
+
+                // DECLARE YOUR MESSAGE HANDLERS HERE
+                userContentController.add(self, name: "API_READY")
+                userContentController.add(self, name: "HOTEL_API_HOTEL_SELECTED")
+
+                return userContentController
+            }()
+            return config
+        }())
         webView.translatesAutoresizingMaskIntoConstraints = false
+        webView.navigationDelegate = self
 
         self.view.addSubview(webView)
         self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[webView]|", options: [], metrics: nil, views: ["webView": webView]))
@@ -29,27 +64,27 @@ class SearchViewController: UIViewController {
         return webView
     }()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func search(location: String, dateStart: Date, dateEnd: Date) {
+        _searchToRun = Search(location: location, dateStart: dateStart, dateEnd: dateEnd)
+        self.webView.load(URLRequest(url: URL(string: "http://hipmunk.github.io/hipproblems/ios_hotelapp/")!))
     }
 
-    func search(location: String, dateStart: Date, dateEnd: Date) {
-        self.webView.load(URLRequest(url: URL(string: "http://localhost:3000")!))
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        let alertController = UIAlertController(title: NSLocalizedString("Could not load page", comment: ""), message: NSLocalizedString("Looks like the server isn't running.", comment: ""), preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("Bummer", comment: ""), style: .default, handler: nil))
+        self.navigationController?.present(alertController, animated: true, completion: nil)
+    }
 
-        let paramsJSONData = try! JSONSerialization.data(
-            withJSONObject: [
-                "location": location,
-                "dateStart": dateFormatter.string(from: dateStart),
-                "dateEnd": dateFormatter.string(from: dateEnd)
-            ],
-            options: [])
-        let paramsJSON: String = String(data: paramsJSONData, encoding: .utf8)!
-
-        /* At some point, you will need to run this JS: */
-        /*
-        self.webView.evaluateJavaScript(
-            "window.JSAPI.runHotelSearch(\(paramsJSON))",
-            completionHandler: nil)
-         */
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        switch message.name {
+        case "API_READY":
+            guard let searchToRun = _searchToRun else { fatalError("Tried to load the page without having a search to run") }
+            self.webView.evaluateJavaScript(
+                "window.JSAPI.runHotelSearch(\(searchToRun.asJSONString))",
+                completionHandler: nil)
+        case "HOTEL_API_HOTEL_SELECTED":
+            self.performSegue(withIdentifier: "hotel_details", sender: nil)
+        default: break
+        }
     }
 }
