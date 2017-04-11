@@ -37,6 +37,8 @@ You may write your API in whatever language you want. It should run on port 8000
 
 The response should look identical to a scraper API response except that it will contain results from all providers while still sorted by agony.
 
+In addition to the correctness of the code you submit, **we also care about the quality.** Understand that this sample of work represents you, and use all best practices in your implementation. We place a high premium on code readability at Hipmunk, and your code will be evaluated with that in mind.
+
 # Testing
 
 A basic test script has been included. To use it, make sure both the scraper API and your API are running then simply run `python -m searchrunner.scraperapi_test`.
