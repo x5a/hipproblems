@@ -21,7 +21,7 @@ Here are the providers that are available:
 - Orbitz
 - Priceline
 - Travelocity
-- United
+- Hilton
 
 # The Problem
 
