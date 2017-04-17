@@ -1,7 +1,6 @@
 # Building a Hotel Search API
 
-When a user runs a hotel search on Hipmunk we search many partner sites simultaneously to ensure we give them the best 
-options. In this problem, you'll build an API that queries each of our different partners and merges their results together.
+When a user runs a hotel search on Hipmunk we search many partner sites simultaneously to ensure we give them the best options. In this problem, you'll build an API that queries each of our different partners and merges their results together.
 
 # Background
 
@@ -25,10 +24,10 @@ Here are the providers that are available:
 
 # The Problem
 
-Your job is to build an API that queries each provider and returns a merged list containing all of their results.
+Your job is to build an API that queries each provider via HTTP and returns a merged list containing all of their results.
 
 Requirements:
-- You must search all providers
+- You must search all providers via HTTP
 - The results should be sorted by ecstasy
 - The scraper APIs already return results sorted by ecstasy, you should take advantage of this!
 
