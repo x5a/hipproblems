@@ -15,7 +15,7 @@ class Scraper(object):
         yield gen.sleep(2)
 
         self.load_fake_results(xrange(1, 20, self.step))
-        self.results.sort(key=lambda r: r['ecstasy'])
+        self.results.sort(key=lambda r: r['ecstasy'], reverse=True)
 
         raise gen.Return(self.results)
 
