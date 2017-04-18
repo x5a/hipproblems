@@ -27,7 +27,7 @@ def test_hotel_search():
             expected, count
         )
 
-    sorted_results = sorted(results, key=lambda r: r["ecstasy"])
+    sorted_results = sorted(results, key=lambda r: r["ecstasy"], reverse=True)
     assert results == sorted_results, "Results aren't sorted properly!"
 
     took = resp.elapsed.total_seconds()
