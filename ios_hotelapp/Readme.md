@@ -2,6 +2,16 @@
 
 For this challenge, you will make a simple hotel search app by combining iOS and web technology. It is called "Hotelzzz" because it helps you find a place to sleep!
 
+## Guidelines
+
+Please send your work to us as a zip file of the entire hipproblems repo, **including the `.git` directory**. The commit history helps us see what you changed! It helps us if your commit messages are nice. You can test that you did it correctly by unzipping the archive, cd-ing into it, and making sure `git status` shows your last commit.
+
+You may use third party libraries as long as they are embedded in the project, or installable with a standard Carthage or Cocoapods process.
+
+It is okay to use example code from around the internet as long as you cite it. But we do ask that you not look at other candidates' public solutions.
+
+## Getting started
+
 There is a "web server" running at `https://hipmunk.github.io/hipproblems/ios_hotelapp/`.
 This page has a JavaScript API; you can call functions from the JS console and get the page to do things.
 
