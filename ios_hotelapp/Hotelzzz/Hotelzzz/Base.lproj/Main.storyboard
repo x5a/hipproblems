@@ -188,16 +188,12 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Filter" id="sgq-9F-p40">
                                 <connections>
-                                    <segue destination="5nq-cZ-lSb" kind="popoverPresentation" identifier="select_filters" popoverAnchorBarButtonItem="sgq-9F-p40" id="SpM-A9-5Th">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="5nq-cZ-lSb" kind="presentation" identifier="select_filters" id="SpM-A9-5Th"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Sort" id="Xjt-gD-deI">
                                 <connections>
-                                    <segue destination="7ab-sq-2R9" kind="popoverPresentation" identifier="select_sort" popoverAnchorBarButtonItem="Xjt-gD-deI" id="c7p-Es-yfb">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="7ab-sq-2R9" kind="presentation" identifier="select_sort" id="c7p-Es-yfb"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
