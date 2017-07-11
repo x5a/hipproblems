@@ -1,11 +1,11 @@
 # Hipmunk Lessenger Coding Challenge
 
-Hello Hipmunk is built on a chatbot engine that handles conversational interactions. It manages the complexity of natural langage and controls the lifecycle of a user.
+Hello Hipmunk is built on a chatbot engine that handles conversational interactions. It manages the complexity of natural langage and controls the lifecycle of a user's interaction with the chatbot
 
-Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform that exposes several features. Keep it simple - you don't necessarily need to use any sopisticated NLP or NLU solutions to solve this problem. Feel free to take liberties with the responses - it's not a requirement to exactly match our example responses.
-Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform that exposes several features. Keep it simple - you don't necessarily need to use any sopisticated NLP or NLU solutions to solve this problem. Feel free to take liberties with the responses - it's not a requirement to exactly match our example responses.
+Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform that implements several features described below. Keep it simple - you don't necessarily need to use any sopisticated NLP or NLU solutions to solve this problem. Feel free to take liberties with the responses - it's not a requirement to exactly match our example responses.
 
 You can reach the Hipmunk Lessenger UI here: [Lessenger UI](https://www.hipmunk.com/jobs/hello/lessenger)
+
 Documentation for the Hipmunk Lessenger Platform can be found here: [API Docs](api.md)
 
 # Welcome Message
