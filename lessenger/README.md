@@ -2,11 +2,15 @@
 
 Hello Hipmunk is built on a chatbot engine that handles conversational interactions. It manages the complexity of natural langage and controls the lifecycle of a user's interaction with the chatbot
 
-Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform that implements several features described below. Keep it simple - you don't necessarily need to use any sopisticated NLP or NLU solutions to solve this problem. Feel free to take liberties with the responses - it's not a requirement to exactly match our example responses.
+Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform using the [Lessenger API](api.md) that implements several features described below. Keep it simple - you don't necessarily need to use any sophisticated [NLP](https://en.wikipedia.org/wiki/Natural_language_processing) or [NLU](https://en.wikipedia.org/wiki/Natural_language_understanding) services/packages to solve this problem.
+
+Feel free to take liberties with the responses your bot provides - it's not a requirement to exactly match our examples.
+
+Your deliverable will be a webserver that implements the API described in the documentation for the Hipmunk Lessenger Platform: [API Docs](api.md).
 
 You can reach the Hipmunk Lessenger UI here: [Lessenger UI](https://www.hipmunk.com/jobs/hello/lessenger)
 
-Documentation for the Hipmunk Lessenger Platform can be found here: [API Docs](api.md)
+Note: while the UI supports modern browsers, we suggest using Chrome.
 
 # Welcome Message
 
@@ -64,9 +68,9 @@ You should use the following APIs to help you build your chatbot. You should hav
 * The Google Gecoding API https://developers.google.com/maps/documentation/geocoding/start will help you convert arbitrary strings that describe to coordinate points. (hint: the query param `address` doesn't need to be a fully formed address).
 
 # Deliverables
-A zip file or GitHub link with your project. We should be A README with instructions to build and run your chatbot engine. If you choose to use a zip file, please use revision control and send the entire repository (we want to be able to see your revision history).
-
-If you want to use outside sources for parts of your submission, please clearly cite them.
+* A zip file or GitHub link with your project. We should be able to see the source of your project.
+* A README with instructions to run your chatbot engine. If you want to use outside sources for parts of your submission, please clearly cite them.
+* If you choose to use a zip file, please use revision control and send the entire repository (we want to be able to see your revision history).
 
 # Bonus
 ## Chit-chat

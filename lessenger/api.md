@@ -2,7 +2,7 @@
 
 *Hipmunk Lessenger* is a minimalist browser-based bot UI that is capable of communicating with a bot engine.
 
-The Hipmunk Lessenger UI will expect a server to be available at `localhost:9000` on the same network the Hipmunk Lessenger UI is being accessed from (i.e., your development machine). The server should expose following HTTP route:
+The Hipmunk Lessenger UI is a webapp that will expect a server implementing its API to be available at `localhost:9000` (i.e., your development machine). The server should expose following HTTP route:
 
 - `POST /chat/messages` - a route capable of receiving messages, and optionally replying with a response.
 
