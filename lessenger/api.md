@@ -6,12 +6,12 @@ The Hipmunk Lessenger UI will expect a server to be available at `localhost:9000
 
 - `POST /chat/messages` - a route capable of receiving messages, and optionally replying with a response.
 
-In order to allow cross origin requests (the UI is served by Hipmunk and your server will be on a different domain, `localhost:9000`), the route you expose needs to set a CORS wildcard HTTP header (i.e., `Access-Control-Allow-Origin: *`). We've provided a reference implementation in this repository, but you are free to use any framework/language you wish.
+In order to allow cross origin requests (the UI is served by Hipmunk and your server will be on a different domain, `localhost:9000`), the route you expose needs to set a CORS wildcard HTTP header (i.e., `Access-Control-Allow-Origin: *`). We've provided several reference implementations in this repository, but you are free to use any framework/language you wish.
 
 
 ## Receiving Messages
 
-User generated - messages will be sent as `POST` requests to the `/chat/message` route. The data will be encoded in `multipart/form-data` format.
+User generated messages will be sent as `POST` requests to the `/chat/message` route. The data will be encoded in `multipart/form-data` format.
 
 When the user joins a chat, you will recieve a message with data about the user. When the user sends a message, you will recieve a message with the user's message in `text`.
 
@@ -26,6 +26,7 @@ Fields:
 * `text`: (string) text of user message.
 
 Join Action Example:
+
 ```
 {
     "action": "join",
@@ -35,6 +36,7 @@ Join Action Example:
 ```
 
 Message Action Example:
+
 ```
 {
     "action": "message",
@@ -67,6 +69,7 @@ Fields:
 * `messages`: (array) message objects to display.
 
 Example Response:
+
 ```
 {
     "messages": [

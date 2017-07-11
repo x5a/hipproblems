@@ -3,6 +3,7 @@
 Hello Hipmunk is built on a chatbot engine that handles conversational interactions. It manages the complexity of natural langage and controls the lifecycle of a user.
 
 Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform that exposes several features. Keep it simple - you don't necessarily need to use any sopisticated NLP or NLU solutions to solve this problem. Feel free to take liberties with the responses - it's not a requirement to exactly match our example responses.
+Your challenge is to build a chatbot engine on the Hipmunk Lessenger messaging platform that exposes several features. Keep it simple - you don't necessarily need to use any sopisticated NLP or NLU solutions to solve this problem. Feel free to take liberties with the responses - it's not a requirement to exactly match our example responses.
 
 You can reach the Hipmunk Lessenger UI here: [Lessenger UI](https://www.hipmunk.com/jobs/hello/lessenger)
 Documentation for the Hipmunk Lessenger Platform can be found here: [API Docs](api.md)
@@ -10,17 +11,22 @@ Documentation for the Hipmunk Lessenger Platform can be found here: [API Docs](a
 # Welcome Message
 
 When the user joins a chat with your bot, you should respond with a personalized greeting. Example:
-```Hello, John!````
+```
+Hello, John!
+```
 
 # Weather
+
 Your users are fascinated by the weather. Build a weather reporting capability.
 
 ## Requirements
+
 Your chatbot engine should be able to handle the following cases:
 
 Note: `<Location>` can be any city or reference to a city such as `SF` or `San Francisco`, or `94100`.
 
 ### Current Weather:
+
 If the user enters one of:
 * `what's the weather in <Location>`
 * `weather in <Location>`
