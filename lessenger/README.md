@@ -10,7 +10,9 @@ Your deliverable will be a webserver that implements the API described in the do
 
 You can reach the Hipmunk Lessenger UI here: [Lessenger UI](https://www.hipmunk.com/jobs/hello/lessenger)
 
-Note: while the UI supports modern browsers, we suggest using Chrome.
+Notes:
+* While the UI supports modern browsers, we suggest using Chrome.
+* There are several [reference server](./examples) implementations available for you to start with, but you can choose any language/framework you wish.
 
 # Welcome Message
 
