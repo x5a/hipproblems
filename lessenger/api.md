@@ -6,7 +6,7 @@ The Hipmunk Lessenger UI is a webapp that will expect a server implementing its 
 
 - `POST /chat/messages` - a route capable of receiving messages, and optionally replying with a response.
 
-In order to allow cross origin requests (the UI is served by Hipmunk and your server will be on a different domain, `localhost:9000`), the route you expose needs to set a CORS wildcard HTTP header (i.e., `Access-Control-Allow-Origin: *`). We've provided several [reference implementations](./examples)  in this repository, but you are free to use any framework/language you wish.
+In order to allow cross-origin requests from the UI (the UI is served by github and your server will be on a different domain, `localhost:9000`), the route you expose needs to use a CORS mechaism.
 
 
 ## Receiving Messages

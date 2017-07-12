@@ -12,7 +12,7 @@ You can reach the Hipmunk Lessenger UI here: [Lessenger UI](http://hipmunk.githu
 
 Notes:
 * While the UI supports modern browsers, we suggest using Chrome.
-* There are several [reference server](./examples) implementations available for you to start with, but you can choose any language/framework you wish.
+* You will have to address the cross-domain nature of the Lessenger by using a CORS mechanism on your webserver.
 
 # Welcome Message
 
@@ -42,25 +42,6 @@ Respond with the current weather. Example:
 ```
 Currently it's 48F. Rain
 ```
-
-### Weather Tomorrow:
-If the user enters one of:
-
-* `What's the weather tomorrow in <Location>`
-* `weather tomorrow in <Location>`
-* `<Location> weather tomorrow`
-
-Respond with a forecast for tomorrow. Example:
-```
-Tomorrow there will be a high of 52F and a low of 38F. Rain throughout the day.
-```
-
-### Error cases:
-If the entered location is invalid such as `sdffdsf`, you should tell the user that you didn't understand the location. Example:
-```I don't know where sdffdsf is.```
-
-If the user entered something that doesn't fit into the above categories, let them know that you didn't understand them. Example:
-```I don't understand you.```
 
 ## Data APIs
 You should use the following APIs to help you build your chatbot. You should have recieved an API key from hipmunk for each of these services.
