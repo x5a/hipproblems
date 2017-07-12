@@ -47,7 +47,7 @@ Currently it's 48F. Rain
 You should use the following APIs to help you build your chatbot. You should have recieved an API key from hipmunk for each of these services.
 
 * The DarkSky Forecast API https://darksky.net/dev/docs/forecast accepts a coordinate point and provides current weather and a forecast.
-* The Google Gecoding API https://developers.google.com/maps/documentation/geocoding/start will help you convert arbitrary strings that describe to coordinate points. (hint: the query param `address` doesn't need to be a fully formed address).
+* The Google Gecoding API https://developers.google.com/maps/documentation/geocoding/start will help you convert arbitrary strings that describe locations to coordinate points. (hint: the query param `address` doesn't need to be a fully formed address).
 
 # Deliverables
 * A zip file or GitHub link with your project. We should be able to see the source of your project.
