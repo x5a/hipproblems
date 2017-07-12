@@ -8,7 +8,7 @@ Feel free to take liberties with the responses your bot provides - it's not a re
 
 Your deliverable will be a webserver that implements the API described in the documentation for the Hipmunk Lessenger Platform: [API Docs](api.md).
 
-You can reach the Hipmunk Lessenger UI here: [Lessenger UI](https://www.hipmunk.com/jobs/hello/lessenger)
+You can reach the Hipmunk Lessenger UI here: [Lessenger UI](http://hipmunk.github.io/hipproblems/lessenger/)
 
 Notes:
 * While the UI supports modern browsers, we suggest using Chrome.
@@ -55,10 +55,9 @@ Respond with a forecast for tomorrow. Example:
 Tomorrow there will be a high of 52F and a low of 38F. Rain throughout the day.
 ```
 
-
 ### Error cases:
-If the entered location is invalid such as `asdf`, you should tell the user that you didn't understand the location. Example:
-```I don't know where ASDF is.```
+If the entered location is invalid such as `sdffdsf`, you should tell the user that you didn't understand the location. Example:
+```I don't know where sdffdsf is.```
 
 If the user entered something that doesn't fit into the above categories, let them know that you didn't understand them. Example:
 ```I don't understand you.```
@@ -73,34 +72,3 @@ You should use the following APIs to help you build your chatbot. You should hav
 * A zip file or GitHub link with your project. We should be able to see the source of your project.
 * A README with instructions to run your chatbot engine. If you want to use outside sources for parts of your submission, please clearly cite them.
 * If you choose to use a zip file, please use revision control and send the entire repository (we want to be able to see your revision history).
-
-# Bonus
-## Chit-chat
-Your users really want to be able to talk with a bot. Handle the following cases:
-
-### Greetings
-If the user enters one of:
-
-* `Hi`
-* `Hello`
-* `Aloha`
-
-Respond with a greeting. Example:
-```
-Hey! I'm a weather bot.
-```
-
-### Help
-If the user enters one of:
-
-* `help`
-* `halp`
-* `I'm stuck`
-
-Respond with an explaination of your features. Example:
-```
-Ask me "What's the weather in SF"
-```
-
-## Search
-TBD. Use TF-IDF to build a search capability.
